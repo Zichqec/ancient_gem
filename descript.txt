@@ -8,3 +8,18 @@ craftmanurl,https://ukagaka.zichqec.com/
 
 seriko.use_self_alpha,1
 seriko.alignmenttodesktop,free
+
+sakura.bindgroup80.default,1
+sakura.bindoption80.group,Gem color,mustselect
+sakura.bindgroup80.name,Gem color,Rhodolite
+sakura.bindgroup81.name,Gem color,Ruby
+sakura.bindgroup82.name,Gem color,Carnelian
+sakura.bindgroup83.name,Gem color,Amber
+sakura.bindgroup84.name,Gem color,Topaz
+sakura.bindgroup85.name,Gem color,Verdelite
+sakura.bindgroup86.name,Gem color,Emerald
+sakura.bindgroup87.name,Gem color,Grandidierite
+sakura.bindgroup88.name,Gem color,Aquamarine
+sakura.bindgroup89.name,Gem color,Sapphire
+sakura.bindgroup90.name,Gem color,Sugilite
+sakura.bindgroup91.name,Gem color,Amethyst

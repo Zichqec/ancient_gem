@@ -1,6 +1,3 @@
-//A quick note about comments: Surfaces.txt does NOT support same line comments. If you want to write a comment, ALWAYS PUT IT ON ITS OWN LINE. If you put comments after other bits of code in the same line, it may seem to work at first, but it can cause cryptic errors down the line. Save yourself the trouble. Always put comments on their own lines in here. Additionally, it doesn't do block comments with /* and */
-
-
 descript
 {
 	version,1
@@ -8,174 +5,771 @@ descript
 
 //—————————————————————————————— Sakura surfaces ——————————————————————————————
 
+//THE PLAN:
+//0-9 - base surfaces/head poses
+//20-39 - left arms
+//40-59 - right arms
+//60-79 - together arms
+//80-99 - eye colors + maybe the blink? blink might need unique numbering, we'll see after I get the chance to make it. actually wait yeah, uh, the eye colors will occupy a bunch more surfaces than this... it's just a question of what animations they take up, here
+
+//Base image
+surface0-9
+{
+	element0,overlay,ancient_gem/base.png,0,0
+	
+	point.basepos.y,315
+}
+
+//Elements and dressups / individual animations
 surface0
-{	
-	//Blink
-	animation0.interval,random,4
-	animation0.pattern1,overlay,1000,0,0,0
-	animation0.pattern2,overlay,1001,100,0,0
-	animation0.pattern3,overlay,-1,50,0,0
+{
+	element1,overlay,ancient_gem/head/00.png,0,0
 	
+	animation80.interval,bind
+	animation80.pattern0,add,10000,0,0,0
 	
-	//Talk
-	animation1.interval,talk,4
-	animation1.pattern0,alternativestart,(2,3,4)
+	animation81.interval,bind
+	animation81.pattern0,add,10001,0,0,0
 	
-	animation2.interval,never
-	animation2.pattern0,overlay,2000,0,0,0
-	animation2.pattern1,overlay,2001,100,0,0
-	animation2.pattern2,overlay,-1,100,0,0
+	animation82.interval,bind
+	animation82.pattern0,add,10002,0,0,0
 	
-	animation3.interval,never
-	animation3.pattern0,overlay,2002,0,0,0
-	animation3.pattern1,overlay,-1,100,0,0
+	animation83.interval,bind
+	animation83.pattern0,add,10003,0,0,0
 	
-	animation4.interval,never
-	animation4.pattern0,overlay,2002,0,0,0
-	animation4.pattern1,overlay,2001,100,0,0
-	animation4.pattern2,overlay,-1,100,0,0
+	animation84.interval,bind
+	animation84.pattern0,add,10004,0,0,0
+	
+	animation85.interval,bind
+	animation85.pattern0,add,10005,0,0,0
+	
+	animation86.interval,bind
+	animation86.pattern0,add,10006,0,0,0
+	
+	animation87.interval,bind
+	animation87.pattern0,add,10007,0,0,0
+	
+	animation88.interval,bind
+	animation88.pattern0,add,10008,0,0,0
+	
+	animation89.interval,bind
+	animation89.pattern0,add,10009,0,0,0
+	
+	animation90.interval,bind
+	animation90.pattern0,add,10010,0,0,0
+	
+	animation91.interval,bind
+	animation91.pattern0,add,10011,0,0,0
 }
 
 surface1
 {
-	//Blink
-	animation0.interval,random,4
-	animation0.pattern1,overlay,1010,0,0,0
-	animation0.pattern2,overlay,1011,100,0,0
-	animation0.pattern3,overlay,-1,50,0,0
+	element1,overlay,ancient_gem/head/01.png,0,0
 	
+	animation80.interval,bind
+	animation80.pattern0,add,10100,0,0,0
 	
-	//Talk
-	animation1.interval,talk,4
-	animation1.pattern0,alternativestart,(2,3,4)
+	animation81.interval,bind
+	animation81.pattern0,add,10101,0,0,0
 	
-	animation2.interval,never
-	animation2.pattern0,overlay,2010,0,0,0
-	animation2.pattern1,overlay,2011,100,0,0
-	animation2.pattern2,overlay,-1,100,0,0
+	animation82.interval,bind
+	animation82.pattern0,add,10102,0,0,0
 	
-	animation3.interval,never
-	animation3.pattern0,overlay,2012,0,0,0
-	animation3.pattern1,overlay,-1,100,0,0
+	animation83.interval,bind
+	animation83.pattern0,add,10103,0,0,0
 	
-	animation4.interval,never
-	animation4.pattern0,overlay,2012,0,0,0
-	animation4.pattern1,overlay,2011,100,0,0
-	animation4.pattern2,overlay,-1,100,0,0
+	animation84.interval,bind
+	animation84.pattern0,add,10104,0,0,0
+	
+	animation85.interval,bind
+	animation85.pattern0,add,10105,0,0,0
+	
+	animation86.interval,bind
+	animation86.pattern0,add,10106,0,0,0
+	
+	animation87.interval,bind
+	animation87.pattern0,add,10107,0,0,0
+	
+	animation88.interval,bind
+	animation88.pattern0,add,10108,0,0,0
+	
+	animation89.interval,bind
+	animation89.pattern0,add,10109,0,0,0
+	
+	animation90.interval,bind
+	animation90.pattern0,add,10110,0,0,0
+	
+	animation91.interval,bind
+	animation91.pattern0,add,10111,0,0,0
 }
 
 surface2
 {
-	//Blink
-	animation0.interval,random,4
-	animation0.pattern1,overlay,1020,0,0,0
-	animation0.pattern2,overlay,1021,100,0,0
-	animation0.pattern3,overlay,-1,50,0,0
+	element1,overlay,ancient_gem/head/02.png,0,0
+	
+	animation80.interval,bind
+	animation80.pattern0,add,10200,0,0,0
+	
+	animation81.interval,bind
+	animation81.pattern0,add,10201,0,0,0
+	
+	animation82.interval,bind
+	animation82.pattern0,add,10202,0,0,0
+	
+	animation83.interval,bind
+	animation83.pattern0,add,10203,0,0,0
+	
+	animation84.interval,bind
+	animation84.pattern0,add,10204,0,0,0
+	
+	animation85.interval,bind
+	animation85.pattern0,add,10205,0,0,0
+	
+	animation86.interval,bind
+	animation86.pattern0,add,10206,0,0,0
+	
+	animation87.interval,bind
+	animation87.pattern0,add,10207,0,0,0
+	
+	animation88.interval,bind
+	animation88.pattern0,add,10208,0,0,0
+	
+	animation89.interval,bind
+	animation89.pattern0,add,10209,0,0,0
+	
+	animation90.interval,bind
+	animation90.pattern0,add,10210,0,0,0
+	
+	animation91.interval,bind
+	animation91.pattern0,add,10211,0,0,0
 }
 
 surface3
 {
-	//Blink
-	animation0.interval,random,4
-	animation0.pattern1,overlay,1030,0,0,0
-	animation0.pattern2,overlay,1031,100,0,0
-	animation0.pattern3,overlay,-1,50,0,0
+	element1,overlay,ancient_gem/head/03.png,0,0
+	
+	animation80.interval,bind
+	animation80.pattern0,add,10300,0,0,0
+	
+	animation81.interval,bind
+	animation81.pattern0,add,10301,0,0,0
+	
+	animation82.interval,bind
+	animation82.pattern0,add,10302,0,0,0
+	
+	animation83.interval,bind
+	animation83.pattern0,add,10303,0,0,0
+	
+	animation84.interval,bind
+	animation84.pattern0,add,10304,0,0,0
+	
+	animation85.interval,bind
+	animation85.pattern0,add,10305,0,0,0
+	
+	animation86.interval,bind
+	animation86.pattern0,add,10306,0,0,0
+	
+	animation87.interval,bind
+	animation87.pattern0,add,10307,0,0,0
+	
+	animation88.interval,bind
+	animation88.pattern0,add,10308,0,0,0
+	
+	animation89.interval,bind
+	animation89.pattern0,add,10309,0,0,0
+	
+	animation90.interval,bind
+	animation90.pattern0,add,10310,0,0,0
+	
+	animation91.interval,bind
+	animation91.pattern0,add,10311,0,0,0
+}
+
+surface4
+{
+	element1,overlay,ancient_gem/head/04.png,0,0
+	
+	animation80.interval,bind
+	animation80.pattern0,add,10400,0,0,0
+	
+	animation81.interval,bind
+	animation81.pattern0,add,10401,0,0,0
+	
+	animation82.interval,bind
+	animation82.pattern0,add,10402,0,0,0
+	
+	animation83.interval,bind
+	animation83.pattern0,add,10403,0,0,0
+	
+	animation84.interval,bind
+	animation84.pattern0,add,10404,0,0,0
+	
+	animation85.interval,bind
+	animation85.pattern0,add,10405,0,0,0
+	
+	animation86.interval,bind
+	animation86.pattern0,add,10406,0,0,0
+	
+	animation87.interval,bind
+	animation87.pattern0,add,10407,0,0,0
+	
+	animation88.interval,bind
+	animation88.pattern0,add,10408,0,0,0
+	
+	animation89.interval,bind
+	animation89.pattern0,add,10409,0,0,0
+	
+	animation90.interval,bind
+	animation90.pattern0,add,10410,0,0,0
+	
+	animation91.interval,bind
+	animation91.pattern0,add,10411,0,0,0
+}
+
+surface5
+{
+	element1,overlay,ancient_gem/head/05.png,0,0
+	
+	animation80.interval,bind
+	animation80.pattern0,add,10500,0,0,0
+	
+	animation81.interval,bind
+	animation81.pattern0,add,10501,0,0,0
+	
+	animation82.interval,bind
+	animation82.pattern0,add,10502,0,0,0
+	
+	animation83.interval,bind
+	animation83.pattern0,add,10503,0,0,0
+	
+	animation84.interval,bind
+	animation84.pattern0,add,10504,0,0,0
+	
+	animation85.interval,bind
+	animation85.pattern0,add,10505,0,0,0
+	
+	animation86.interval,bind
+	animation86.pattern0,add,10506,0,0,0
+	
+	animation87.interval,bind
+	animation87.pattern0,add,10507,0,0,0
+	
+	animation88.interval,bind
+	animation88.pattern0,add,10508,0,0,0
+	
+	animation89.interval,bind
+	animation89.pattern0,add,10509,0,0,0
+	
+	animation90.interval,bind
+	animation90.pattern0,add,10510,0,0,0
+	
+	animation91.interval,bind
+	animation91.pattern0,add,10511,0,0,0
+}
+
+surface6
+{
+	element1,overlay,ancient_gem/head/06.png,0,0
 }
 
 surface7
 {
-	//Blink
-	animation0.interval,random,4
-	animation0.pattern1,overlay,1070,0,0,0
-	animation0.pattern2,overlay,1071,100,0,0
-	animation0.pattern3,overlay,-1,50,0,0
+	element1,overlay,ancient_gem/head/07.png,0,0
 }
 
 surface8
 {
+	element1,overlay,ancient_gem/head/08.png,0,0
+}
+
+surface9
+{
+	element1,overlay,ancient_gem/head/09.png,0,0
+	
+	animation80.interval,bind
+	animation80.pattern0,add,10900,0,0,0
+	
+	animation81.interval,bind
+	animation81.pattern0,add,10901,0,0,0
+	
+	animation82.interval,bind
+	animation82.pattern0,add,10902,0,0,0
+	
+	animation83.interval,bind
+	animation83.pattern0,add,10903,0,0,0
+	
+	animation84.interval,bind
+	animation84.pattern0,add,10904,0,0,0
+	
+	animation85.interval,bind
+	animation85.pattern0,add,10905,0,0,0
+	
+	animation86.interval,bind
+	animation86.pattern0,add,10906,0,0,0
+	
+	animation87.interval,bind
+	animation87.pattern0,add,10907,0,0,0
+	
+	animation88.interval,bind
+	animation88.pattern0,add,10908,0,0,0
+	
+	animation89.interval,bind
+	animation89.pattern0,add,10909,0,0,0
+	
+	animation90.interval,bind
+	animation90.pattern0,add,10910,0,0,0
+	
+	animation91.interval,bind
+	animation91.pattern0,add,10911,0,0,0
+}
+
+//Arms / shared animations
+surface.append0-9
+{
 	//Blink
-	animation0.interval,random,4
-	animation0.pattern1,overlay,1080,0,0,0
-	animation0.pattern2,overlay,1081,100,0,0
-	animation0.pattern3,overlay,-1,50,0,0
+	// animation0.interval,random,4
+	// animation0.pattern1,overlay,1000,0,0,0
+	// animation0.pattern2,overlay,1001,100,0,0
+	// animation0.pattern3,overlay,-1,50,0,0
+	
+	animation60.interval,runonce
+	animation60.pattern0,overlay,60,0,0,0
 }
 
-surface25
+//————— Arm surface definitions —————
+surface60
 {
-	//Music note loop
-	animation0.interval,always
-	animation0.pattern0,overlay,-1,0,0,0
-	animation0.pattern1,overlay,3000,500,0,0
-	animation0.pattern2,overlay,3000,500,0,0
+	element1,overlay,ancient_gem/arm_both/resting.png,0,0
 }
 
-//Collisions for the sakura. For many shells the collisions will have to be set per-surface because they'll be different, but I didn't want to waste the space here.
-surface.append0-9,25
+//————— Gem eye surface definitions —————
+//First 1 is just to deal with leading 0s and has no meaning
+//Middle two digits are the surface/head number (00-09)
+//Last two are the gem color number (00-11)
+surface10000
 {
-	collision0,0,0,130,65,head
+	element0,overlay,ancient_gem/eye/00/00.png,0,0
 }
+
+surface10001
+{
+	element0,overlay,ancient_gem/eye/00/01.png,0,0
+}
+
+surface10002
+{
+	element0,overlay,ancient_gem/eye/00/02.png,0,0
+}
+
+surface10003
+{
+	element0,overlay,ancient_gem/eye/00/03.png,0,0
+}
+
+surface10004
+{
+	element0,overlay,ancient_gem/eye/00/04.png,0,0
+}
+
+surface10005
+{
+	element0,overlay,ancient_gem/eye/00/05.png,0,0
+}
+
+surface10006
+{
+	element0,overlay,ancient_gem/eye/00/06.png,0,0
+}
+
+surface10007
+{
+	element0,overlay,ancient_gem/eye/00/07.png,0,0
+}
+
+surface10008
+{
+	element0,overlay,ancient_gem/eye/00/08.png,0,0
+}
+
+surface10009
+{
+	element0,overlay,ancient_gem/eye/00/09.png,0,0
+}
+
+surface10010
+{
+	element0,overlay,ancient_gem/eye/00/10.png,0,0
+}
+
+surface10011
+{
+	element0,overlay,ancient_gem/eye/00/11.png,0,0
+}
+
+
+surface10100
+{
+	element0,overlay,ancient_gem/eye/01/00.png,0,0
+}
+
+surface10101
+{
+	element0,overlay,ancient_gem/eye/01/01.png,0,0
+}
+
+surface10102
+{
+	element0,overlay,ancient_gem/eye/01/02.png,0,0
+}
+
+surface10103
+{
+	element0,overlay,ancient_gem/eye/01/03.png,0,0
+}
+
+surface10104
+{
+	element0,overlay,ancient_gem/eye/01/04.png,0,0
+}
+
+surface10105
+{
+	element0,overlay,ancient_gem/eye/01/05.png,0,0
+}
+
+surface10106
+{
+	element0,overlay,ancient_gem/eye/01/06.png,0,0
+}
+
+surface10107
+{
+	element0,overlay,ancient_gem/eye/01/07.png,0,0
+}
+
+surface10108
+{
+	element0,overlay,ancient_gem/eye/01/08.png,0,0
+}
+
+surface10109
+{
+	element0,overlay,ancient_gem/eye/01/09.png,0,0
+}
+
+surface10110
+{
+	element0,overlay,ancient_gem/eye/01/10.png,0,0
+}
+
+surface10111
+{
+	element0,overlay,ancient_gem/eye/01/11.png,0,0
+}
+
+surface10200
+{
+	element0,overlay,ancient_gem/eye/02/00.png,0,0
+}
+
+surface10201
+{
+	element0,overlay,ancient_gem/eye/02/01.png,0,0
+}
+
+surface10202
+{
+	element0,overlay,ancient_gem/eye/02/02.png,0,0
+}
+
+surface10203
+{
+	element0,overlay,ancient_gem/eye/02/03.png,0,0
+}
+
+surface10204
+{
+	element0,overlay,ancient_gem/eye/02/04.png,0,0
+}
+
+surface10205
+{
+	element0,overlay,ancient_gem/eye/02/05.png,0,0
+}
+
+surface10206
+{
+	element0,overlay,ancient_gem/eye/02/06.png,0,0
+}
+
+surface10207
+{
+	element0,overlay,ancient_gem/eye/02/07.png,0,0
+}
+
+surface10208
+{
+	element0,overlay,ancient_gem/eye/02/08.png,0,0
+}
+
+surface10209
+{
+	element0,overlay,ancient_gem/eye/02/09.png,0,0
+}
+
+surface10210
+{
+	element0,overlay,ancient_gem/eye/02/10.png,0,0
+}
+
+surface10211
+{
+	element0,overlay,ancient_gem/eye/02/11.png,0,0
+}
+
+surface10300
+{
+	element0,overlay,ancient_gem/eye/03/00.png,0,0
+}
+
+surface10301
+{
+	element0,overlay,ancient_gem/eye/03/01.png,0,0
+}
+
+surface10302
+{
+	element0,overlay,ancient_gem/eye/03/02.png,0,0
+}
+
+surface10303
+{
+	element0,overlay,ancient_gem/eye/03/03.png,0,0
+}
+
+surface10304
+{
+	element0,overlay,ancient_gem/eye/03/04.png,0,0
+}
+
+surface10305
+{
+	element0,overlay,ancient_gem/eye/03/05.png,0,0
+}
+
+surface10306
+{
+	element0,overlay,ancient_gem/eye/03/06.png,0,0
+}
+
+surface10307
+{
+	element0,overlay,ancient_gem/eye/03/07.png,0,0
+}
+
+surface10308
+{
+	element0,overlay,ancient_gem/eye/03/08.png,0,0
+}
+
+surface10309
+{
+	element0,overlay,ancient_gem/eye/03/09.png,0,0
+}
+
+surface10310
+{
+	element0,overlay,ancient_gem/eye/03/10.png,0,0
+}
+
+surface10311
+{
+	element0,overlay,ancient_gem/eye/03/11.png,0,0
+}
+
+surface10400
+{
+	element0,overlay,ancient_gem/eye/04/00.png,0,0
+}
+
+surface10401
+{
+	element0,overlay,ancient_gem/eye/04/01.png,0,0
+}
+
+surface10402
+{
+	element0,overlay,ancient_gem/eye/04/02.png,0,0
+}
+
+surface10403
+{
+	element0,overlay,ancient_gem/eye/04/03.png,0,0
+}
+
+surface10404
+{
+	element0,overlay,ancient_gem/eye/04/04.png,0,0
+}
+
+surface10405
+{
+	element0,overlay,ancient_gem/eye/04/05.png,0,0
+}
+
+surface10406
+{
+	element0,overlay,ancient_gem/eye/04/06.png,0,0
+}
+
+surface10407
+{
+	element0,overlay,ancient_gem/eye/04/07.png,0,0
+}
+
+surface10408
+{
+	element0,overlay,ancient_gem/eye/04/08.png,0,0
+}
+
+surface10409
+{
+	element0,overlay,ancient_gem/eye/04/09.png,0,0
+}
+
+surface10410
+{
+	element0,overlay,ancient_gem/eye/04/10.png,0,0
+}
+
+surface10411
+{
+	element0,overlay,ancient_gem/eye/04/11.png,0,0
+}
+
+surface10500
+{
+	element0,overlay,ancient_gem/eye/05/00.png,0,0
+}
+
+surface10501
+{
+	element0,overlay,ancient_gem/eye/05/01.png,0,0
+}
+
+surface10502
+{
+	element0,overlay,ancient_gem/eye/05/02.png,0,0
+}
+
+surface10503
+{
+	element0,overlay,ancient_gem/eye/05/03.png,0,0
+}
+
+surface10504
+{
+	element0,overlay,ancient_gem/eye/05/04.png,0,0
+}
+
+surface10505
+{
+	element0,overlay,ancient_gem/eye/05/05.png,0,0
+}
+
+surface10506
+{
+	element0,overlay,ancient_gem/eye/05/06.png,0,0
+}
+
+surface10507
+{
+	element0,overlay,ancient_gem/eye/05/07.png,0,0
+}
+
+surface10508
+{
+	element0,overlay,ancient_gem/eye/05/08.png,0,0
+}
+
+surface10509
+{
+	element0,overlay,ancient_gem/eye/05/09.png,0,0
+}
+
+surface10510
+{
+	element0,overlay,ancient_gem/eye/05/10.png,0,0
+}
+
+surface10511
+{
+	element0,overlay,ancient_gem/eye/05/11.png,0,0
+}
+
+surface10900
+{
+	element0,overlay,ancient_gem/eye/09/00.png,0,0
+}
+
+surface10901
+{
+	element0,overlay,ancient_gem/eye/09/01.png,0,0
+}
+
+surface10902
+{
+	element0,overlay,ancient_gem/eye/09/02.png,0,0
+}
+
+surface10903
+{
+	element0,overlay,ancient_gem/eye/09/03.png,0,0
+}
+
+surface10904
+{
+	element0,overlay,ancient_gem/eye/09/04.png,0,0
+}
+
+surface10905
+{
+	element0,overlay,ancient_gem/eye/09/05.png,0,0
+}
+
+surface10906
+{
+	element0,overlay,ancient_gem/eye/09/06.png,0,0
+}
+
+surface10907
+{
+	element0,overlay,ancient_gem/eye/09/07.png,0,0
+}
+
+surface10908
+{
+	element0,overlay,ancient_gem/eye/09/08.png,0,0
+}
+
+surface10909
+{
+	element0,overlay,ancient_gem/eye/09/09.png,0,0
+}
+
+surface10910
+{
+	element0,overlay,ancient_gem/eye/09/10.png,0,0
+}
+
+surface10911
+{
+	element0,overlay,ancient_gem/eye/09/11.png,0,0
+}
+
 
 //—————————————————————————————— Kero surfaces ——————————————————————————————
 
 surface10
 {
-	//Talk
-	animation1.interval,talk,4
-	animation1.pattern0,alternativestart,(2,3,4)
-	
-	animation2.interval,never
-	animation2.pattern0,overlay,2100,0,0,0
-	animation2.pattern1,overlay,2101,100,0,0
-	animation2.pattern2,overlay,-1,100,0,0
-	
-	animation3.interval,never
-	animation3.pattern0,overlay,2102,0,0,0
-	animation3.pattern1,overlay,-1,100,0,0
-	
-	animation4.interval,never
-	animation4.pattern0,overlay,2102,0,0,0
-	animation4.pattern1,overlay,2101,100,0,0
-	animation4.pattern2,overlay,-1,100,0,0
-}
-
-surface11
-{
-	//Blink
-	animation0.interval,random,4
-	animation0.pattern1,overlay,1100,0,0,0
-	animation0.pattern2,overlay,1101,100,0,0
-	animation0.pattern3,overlay,-1,50,0,0
-	
-	//Talk
-	animation1.interval,talk,4
-	animation1.pattern0,alternativestart,(2,3,4)
-	
-	animation2.interval,never
-	animation2.pattern0,overlay,2100,0,0,0
-	animation2.pattern1,overlay,2101,100,0,0
-	animation2.pattern2,overlay,-1,100,0,0
-	
-	animation3.interval,never
-	animation3.pattern0,overlay,2102,0,0,0
-	animation3.pattern1,overlay,-1,100,0,0
-	
-	animation4.interval,never
-	animation4.pattern0,overlay,2102,0,0,0
-	animation4.pattern1,overlay,2101,100,0,0
-	animation4.pattern2,overlay,-1,100,0,0
-}
-
-surface19
-{
-	//Music note loop
-	animation0.interval,always
-	animation0.pattern0,overlay,-1,0,0,0
-	animation0.pattern1,overlay,3001,500,0,0
-	animation0.pattern2,overlay,3001,500,0,0
-}
-
-//Collisions for the kero. See above note about the sakura collisions.
-surface.append10,11,19
-{
-	collision0,0,0,130,65,head
 }

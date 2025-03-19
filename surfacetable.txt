@@ -1,3 +1,115 @@
 charset,UTF-8
 version,1
 option,DisableNoDefineSurfaces
+
+group,AG
+{
+	scope,0
+	
+	0,Forward
+	1,Forward Right
+	2,Forward Left
+	3,Three quarter
+	4,Three quarter up
+	5,Three quarter down
+	6,Side
+	7,Side-Up
+	8,Side-Down
+	9,Bowed
+}
+
+group,__disabled
+{
+	60,__parts
+
+	10000,__parts
+	10001,__parts
+	10002,__parts
+	10003,__parts
+	10004,__parts
+	10005,__parts
+	10006,__parts
+	10007,__parts
+	10008,__parts
+	10009,__parts
+	10010,__parts
+	10011,__parts
+	
+	10100,__parts
+	10101,__parts
+	10102,__parts
+	10103,__parts
+	10104,__parts
+	10105,__parts
+	10106,__parts
+	10107,__parts
+	10108,__parts
+	10109,__parts
+	10110,__parts
+	10111,__parts
+	
+	10200,__parts
+	10201,__parts
+	10202,__parts
+	10203,__parts
+	10204,__parts
+	10205,__parts
+	10206,__parts
+	10207,__parts
+	10208,__parts
+	10209,__parts
+	10210,__parts
+	10211,__parts
+	
+	10300,__parts
+	10301,__parts
+	10302,__parts
+	10303,__parts
+	10304,__parts
+	10305,__parts
+	10306,__parts
+	10307,__parts
+	10308,__parts
+	10309,__parts
+	10310,__parts
+	10311,__parts
+	
+	10400,__parts
+	10401,__parts
+	10402,__parts
+	10403,__parts
+	10404,__parts
+	10405,__parts
+	10406,__parts
+	10407,__parts
+	10408,__parts
+	10409,__parts
+	10410,__parts
+	10411,__parts
+	
+	10500,__parts
+	10501,__parts
+	10502,__parts
+	10503,__parts
+	10504,__parts
+	10505,__parts
+	10506,__parts
+	10507,__parts
+	10508,__parts
+	10509,__parts
+	10510,__parts
+	10511,__parts
+	
+	10900,__parts
+	10901,__parts
+	10902,__parts
+	10903,__parts
+	10904,__parts
+	10905,__parts
+	10906,__parts
+	10907,__parts
+	10908,__parts
+	10909,__parts
+	10910,__parts
+	10911,__parts
+}
