@@ -17,7 +17,7 @@ surface0-9
 {
 	element0,overlay,ancient_gem/base.png,0,0
 	
-	point.basepos.y,315
+	point.basepos.y,313
 }
 
 //Elements and dressups / individual animations
