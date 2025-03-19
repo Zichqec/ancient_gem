@@ -332,12 +332,16 @@ surface.append0-9
 	// animation0.pattern2,overlay,1001,100,0,0
 	// animation0.pattern3,overlay,-1,50,0,0
 	
+	//Combined arms
+	//Resting
 	animation60.interval,runonce
-	animation60.pattern0,overlay,60,0,0,0
+	animation60.pattern0,overlay,1060,0,0,0
 }
 
 //————— Arm surface definitions —————
-surface60
+//First 10 is just to avoid overlap with Forged Metal freeshell if you combine them
+//Second two digits are which arm this is, see near top of file for the plan (only relevant once I draw those parts though...)
+surface1060
 {
 	element1,overlay,ancient_gem/arm_both/resting.png,0,0
 }

@@ -20,7 +20,7 @@ group,AG
 
 group,__disabled
 {
-	60,__parts
+	1060,__parts
 
 	10000,__parts
 	10001,__parts
