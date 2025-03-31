@@ -24,3 +24,5 @@ sakura.bindgroup88.name,Gem color,Aquamarine
 sakura.bindgroup89.name,Gem color,Sapphire
 sakura.bindgroup90.name,Gem color,Sugilite
 sakura.bindgroup91.name,Gem color,Amethyst
+
+sakura.menu,auto
