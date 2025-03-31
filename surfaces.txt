@@ -60,6 +60,16 @@ surface0
 	
 	animation91.interval,bind
 	animation91.pattern0,add,10011,0,0,0
+	
+	//Shine (this shell's "blink")
+	animation100.interval,periodic,6
+	animation100.pattern0,overlay,10090,0-2000,0,0
+	animation100.pattern1,overlay,10091,50,0,0
+	animation100.pattern2,overlay,10092,50,0,0
+	animation100.pattern3,overlay,10093,50,0,0
+	animation100.pattern4,overlay,10094,50,0,0
+	animation100.pattern5,overlay,10095,50,0,0
+	animation100.pattern6,overlay,-1,50,0,0
 }
 
 surface1
@@ -101,6 +111,16 @@ surface1
 	
 	animation91.interval,bind
 	animation91.pattern0,add,10111,0,0,0
+	
+	//Shine (this shell's "blink")
+	animation100.interval,periodic,6
+	animation100.pattern0,overlay,10190,0-2000,0,0
+	animation100.pattern1,overlay,10191,50,0,0
+	animation100.pattern2,overlay,10192,50,0,0
+	animation100.pattern3,overlay,10193,50,0,0
+	animation100.pattern4,overlay,10194,50,0,0
+	animation100.pattern5,overlay,10195,50,0,0
+	animation100.pattern6,overlay,-1,50,0,0
 }
 
 surface2
@@ -142,6 +162,16 @@ surface2
 	
 	animation91.interval,bind
 	animation91.pattern0,add,10211,0,0,0
+	
+	//Shine (this shell's "blink")
+	animation100.interval,periodic,6
+	animation100.pattern0,overlay,10290,0-2000,0,0
+	animation100.pattern1,overlay,10291,50,0,0
+	animation100.pattern2,overlay,10292,50,0,0
+	animation100.pattern3,overlay,10293,50,0,0
+	animation100.pattern4,overlay,10294,50,0,0
+	animation100.pattern5,overlay,10295,50,0,0
+	animation100.pattern6,overlay,-1,50,0,0
 }
 
 surface3
@@ -183,6 +213,16 @@ surface3
 	
 	animation91.interval,bind
 	animation91.pattern0,add,10311,0,0,0
+	
+	//Shine (this shell's "blink")
+	animation100.interval,periodic,6
+	animation100.pattern0,overlay,10390,0-2000,0,0
+	animation100.pattern1,overlay,10391,50,0,0
+	animation100.pattern2,overlay,10392,50,0,0
+	animation100.pattern3,overlay,10393,50,0,0
+	animation100.pattern4,overlay,10394,50,0,0
+	animation100.pattern5,overlay,10395,50,0,0
+	animation100.pattern6,overlay,-1,50,0,0
 }
 
 surface4
@@ -224,6 +264,16 @@ surface4
 	
 	animation91.interval,bind
 	animation91.pattern0,add,10411,0,0,0
+	
+	//Shine (this shell's "blink")
+	animation100.interval,periodic,6
+	animation100.pattern0,overlay,10490,0-2000,0,0
+	animation100.pattern1,overlay,10491,50,0,0
+	animation100.pattern2,overlay,10492,50,0,0
+	animation100.pattern3,overlay,10493,50,0,0
+	animation100.pattern4,overlay,10494,50,0,0
+	animation100.pattern5,overlay,10495,50,0,0
+	animation100.pattern6,overlay,-1,50,0,0
 }
 
 surface5
@@ -265,6 +315,16 @@ surface5
 	
 	animation91.interval,bind
 	animation91.pattern0,add,10511,0,0,0
+	
+	//Shine (this shell's "blink")
+	animation100.interval,periodic,6
+	animation100.pattern0,overlay,10590,0-2000,0,0
+	animation100.pattern1,overlay,10591,50,0,0
+	animation100.pattern2,overlay,10592,50,0,0
+	animation100.pattern3,overlay,10593,50,0,0
+	animation100.pattern4,overlay,10594,50,0,0
+	animation100.pattern5,overlay,10595,50,0,0
+	animation100.pattern6,overlay,-1,50,0,0
 }
 
 surface6
@@ -321,17 +381,21 @@ surface9
 	
 	animation91.interval,bind
 	animation91.pattern0,add,10911,0,0,0
+	
+	//Shine (this shell's "blink")
+	animation100.interval,periodic,6
+	animation100.pattern0,overlay,10990,0-2000,0,0
+	animation100.pattern1,overlay,10991,50,0,0
+	animation100.pattern2,overlay,10992,50,0,0
+	animation100.pattern3,overlay,10993,50,0,0
+	animation100.pattern4,overlay,10994,50,0,0
+	animation100.pattern5,overlay,10995,50,0,0
+	animation100.pattern6,overlay,-1,50,0,0
 }
 
 //Arms / shared animations
 surface.append0-9
 {
-	//Blink
-	// animation0.interval,random,4
-	// animation0.pattern1,overlay,1000,0,0,0
-	// animation0.pattern2,overlay,1001,100,0,0
-	// animation0.pattern3,overlay,-1,50,0,0
-	
 	//Combined arms
 	//Resting
 	animation60.interval,runonce
@@ -350,6 +414,7 @@ surface1060
 //First 1 is just to deal with leading 0s and has no meaning
 //Middle two digits are the surface/head number (00-09)
 //Last two are the gem color number (00-11)
+//Last two digits also have the blink frames, they start at 90
 surface10000
 {
 	element0,overlay,ancient_gem/eye/00/00.png,0,0
