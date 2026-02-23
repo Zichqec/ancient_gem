@@ -7,10 +7,11 @@ descript
 
 //THE PLAN:
 //0-9 - base surfaces/head poses
-//20-39 - left arms
-//40-59 - right arms
+//20-39 - right arms
+//40-59 - left arms
 //60-79 - together arms
-//80-99 - eye colors + maybe the blink? blink might need unique numbering, we'll see after I get the chance to make it. actually wait yeah, uh, the eye colors will occupy a bunch more surfaces than this... it's just a question of what animations they take up, here
+//80-99 - eye colors
+//100 - eye shine/"blink"
 
 //Base image
 surface0-9
@@ -31,6 +32,7 @@ surface0
 	collisionex4,face,region,ancient_gem/collision/00.png,178,178,178
 	//If wanted, the rgb for the back of the head is 076,076,076
 	
+	//Eye colors
 	animation80.interval,bind
 	animation80.pattern0,add,10000,0,0,0
 	
@@ -88,6 +90,7 @@ surface1
 	collisionex4,face,region,ancient_gem/collision/01.png,178,178,178
 	//If wanted, the rgb for the back of the head is 076,076,076
 	
+	//Eye colors
 	animation80.interval,bind
 	animation80.pattern0,add,10100,0,0,0
 	
@@ -145,6 +148,7 @@ surface2
 	collisionex4,face,region,ancient_gem/collision/02.png,178,178,178
 	//If wanted, the rgb for the back of the head is 076,076,076
 	
+	//Eye colors
 	animation80.interval,bind
 	animation80.pattern0,add,10200,0,0,0
 	
@@ -202,6 +206,7 @@ surface3
 	collisionex4,face,region,ancient_gem/collision/03.png,178,178,178
 	//If wanted, the rgb for the back of the head is 076,076,076
 	
+	//Eye colors
 	animation80.interval,bind
 	animation80.pattern0,add,10300,0,0,0
 	
@@ -259,6 +264,7 @@ surface4
 	collisionex4,face,region,ancient_gem/collision/04.png,178,178,178
 	//If wanted, the rgb for the back of the head is 076,076,076
 	
+	//Eye colors
 	animation80.interval,bind
 	animation80.pattern0,add,10400,0,0,0
 	
@@ -316,6 +322,7 @@ surface5
 	collisionex4,face,region,ancient_gem/collision/05.png,178,178,178
 	//If wanted, the rgb for the back of the head is 076,076,076
 	
+	//Eye colors
 	animation80.interval,bind
 	animation80.pattern0,add,10500,0,0,0
 	
@@ -403,6 +410,7 @@ surface9
 	collisionex4,face,region,ancient_gem/collision/09.png,178,178,178
 	//If wanted, the rgb for the back of the head is 076,076,076
 	
+	//Eye colors
 	animation80.interval,bind
 	animation80.pattern0,add,10900,0,0,0
 	
@@ -453,18 +461,168 @@ surface9
 //Arms / shared animations
 surface.append0-9
 {
+	//Right arms (stage right)
+	//Holding leg
+	animation20.interval,never
+	animation20.pattern0,parallelstop,(60,21,22,23,24,25,26)
+	animation20.pattern1,overlay,1020,0,0,0
+	
+	//On floor
+	animation21.interval,never
+	animation21.pattern0,parallelstop,(60,20,22,23,24,25,26)
+	animation21.pattern1,overlay,1021,0,0,0
+	
+	//On leg
+	animation22.interval,never
+	animation22.pattern0,parallelstop,(60,20,21,23,24,25,26)
+	animation22.pattern1,overlay,1022,0,0,0
+	
+	//Gesture back
+	animation23.interval,never
+	animation23.pattern0,parallelstop,(60,20,21,22,24,25,26)
+	animation23.pattern1,overlay,1023,0,0,0
+	
+	//Gesture side
+	animation24.interval,never
+	animation24.pattern0,parallelstop,(60,20,21,22,23,25,26)
+	animation24.pattern1,overlay,1024,0,0,0
+	
+	//Point up
+	animation25.interval,never
+	animation25.pattern0,parallelstop,(60,20,21,22,23,24,26)
+	animation25.pattern1,overlay,1025,0,0,0
+	
+	//Hand up
+	animation26.interval,never
+	animation26.pattern0,parallelstop,(60,20,21,22,23,24,25)
+	animation26.pattern1,overlay,1026,0,0,0
+	
+	
+	//Left arms (stage left)	
+	//Holding leg
+	animation40.interval,never
+	animation40.pattern0,parallelstop,(60,41,42,43,44,45,46)
+	animation40.pattern1,overlay,1040,0,0,0
+	
+	//On floor
+	animation41.interval,never
+	animation41.pattern0,parallelstop,(60,40,42,43,44,45,46)
+	animation41.pattern1,overlay,1041,0,0,0
+	
+	//In lap
+	animation42.interval,never
+	animation42.pattern0,parallelstop,(60,40,41,43,44,45,46)
+	animation42.pattern1,overlay,1042,0,0,0
+	
+	//Gesture forward
+	animation43.interval,never
+	animation43.pattern0,parallelstop,(60,40,41,42,44,45,46)
+	animation43.pattern1,overlay,1043,0,0,0
+	
+	//Gesture side
+	animation44.interval,never
+	animation44.pattern0,parallelstop,(60,40,41,42,43,45,46)
+	animation44.pattern1,overlay,1044,0,0,0
+	
+	//Point up
+	animation45.interval,never
+	animation45.pattern0,parallelstop,(60,40,41,42,43,44,46)
+	animation45.pattern1,overlay,1045,0,0,0
+	
+	//Hand up
+	animation46.interval,never
+	animation46.pattern0,parallelstop,(60,40,41,42,43,44,45)
+	animation46.pattern1,overlay,1046,0,0,0
+	
+	
 	//Combined arms
 	//Resting
 	animation60.interval,runonce
-	animation60.pattern0,overlay,1060,0,0,0
+	animation60.pattern0,parallelstop,(20,21,22,23,24,25,26,40,41,42,43,44,45,46)
+	animation60.pattern1,overlay,1060,0,0,0
 }
 
 //————— Arm surface definitions —————
 //First 10 is just to avoid overlap with Forged Metal freeshell if you combine them
-//Second two digits are which arm this is, see near top of file for the plan (only relevant once I draw those parts though...)
+//Second two digits are which arm this is, see near top of file for the plan
+//Right arms
+surface1020
+{
+	element0,overlay,ancient_gem/arm_right/holding_leg.png,0,0
+}
+
+surface1021
+{
+	element0,overlay,ancient_gem/arm_right/on_floor.png,0,0
+}
+
+surface1022
+{
+	element0,overlay,ancient_gem/arm_right/on_leg.png,0,0
+}
+
+surface1023
+{
+	element0,overlay,ancient_gem/arm_right/gesture_back.png,0,0
+}
+
+surface1024
+{
+	element0,overlay,ancient_gem/arm_right/gesture_side.png,0,0
+}
+
+surface1025
+{
+	element0,overlay,ancient_gem/arm_right/point_up.png,0,0
+}
+
+surface1026
+{
+	element0,overlay,ancient_gem/arm_right/hand_up.png,0,0
+}
+
+
+//Left arms
+surface1040
+{
+	element0,overlay,ancient_gem/arm_left/holding_leg.png,0,0
+}
+
+surface1041
+{
+	element0,overlay,ancient_gem/arm_left/on_floor.png,0,0
+}
+
+surface1042
+{
+	element0,overlay,ancient_gem/arm_left/in_lap.png,0,0
+}
+
+surface1043
+{
+	element0,overlay,ancient_gem/arm_left/gesture_forward.png,0,0
+}
+
+surface1044
+{
+	element0,overlay,ancient_gem/arm_left/gesture_side.png,0,0
+}
+
+surface1045
+{
+	element0,overlay,ancient_gem/arm_left/point_up.png,0,0
+}
+
+surface1046
+{
+	element0,overlay,ancient_gem/arm_left/hand_up.png,0,0
+}
+
+
+//Together arms
 surface1060
 {
-	element1,overlay,ancient_gem/arm_both/resting.png,0,0
+	element0,overlay,ancient_gem/arm_both/resting.png,0,0
 }
 
 //————— Gem eye surface definitions —————
@@ -895,7 +1053,6 @@ surface10911
 
 
 //—————————————————————————————— Kero surfaces ——————————————————————————————
-
 surface10
 {
 }
