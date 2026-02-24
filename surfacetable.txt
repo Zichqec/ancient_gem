@@ -20,6 +20,22 @@ group,AG
 
 group,__disabled
 {
+	1020,__parts
+	1021,__parts
+	1022,__parts
+	1023,__parts
+	1024,__parts
+	1025,__parts
+	1026,__parts
+	
+	1040,__parts
+	1041,__parts
+	1042,__parts
+	1043,__parts
+	1044,__parts
+	1045,__parts
+	1046,__parts
+	
 	1060,__parts
 
 	10000,__parts
