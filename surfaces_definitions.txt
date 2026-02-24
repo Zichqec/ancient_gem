@@ -1,0 +1,517 @@
+//This file contains surface definitions for Ancient Gem. It's just to make the main surfaces.txt file a bit less cluttered, you can combine them if preferred.
+descript
+{
+	version,1
+}
+
+
+//————— Arm surface definitions —————
+//First 10 is just to avoid overlap with Forged Metal freeshell if you combine them
+//Second two digits are which arm this is, see near top of file for the numbering scheme
+
+//Left arms
+surface1020
+{
+	element0,overlay,ancient_gem/arm_left/holding_leg.png,0,0
+}
+
+surface1021
+{
+	element0,overlay,ancient_gem/arm_left/on_floor.png,0,0
+}
+
+surface1022
+{
+	element0,overlay,ancient_gem/arm_left/in_lap.png,0,0
+}
+
+surface1023
+{
+	element0,overlay,ancient_gem/arm_left/gesture_forward.png,0,0
+}
+
+surface1024
+{
+	element0,overlay,ancient_gem/arm_left/gesture_side.png,0,0
+}
+
+surface1025
+{
+	element0,overlay,ancient_gem/arm_left/point_up.png,0,0
+}
+
+surface1026
+{
+	element0,overlay,ancient_gem/arm_left/hand_up.png,0,0
+}
+
+
+//Right arms
+surface1040
+{
+	element0,overlay,ancient_gem/arm_right/holding_leg.png,0,0
+}
+
+surface1041
+{
+	element0,overlay,ancient_gem/arm_right/on_floor.png,0,0
+}
+
+surface1042
+{
+	element0,overlay,ancient_gem/arm_right/on_leg.png,0,0
+}
+
+surface1043
+{
+	element0,overlay,ancient_gem/arm_right/gesture_back.png,0,0
+}
+
+surface1044
+{
+	element0,overlay,ancient_gem/arm_right/gesture_side.png,0,0
+}
+
+surface1045
+{
+	element0,overlay,ancient_gem/arm_right/point_up.png,0,0
+}
+
+surface1046
+{
+	element0,overlay,ancient_gem/arm_right/hand_up.png,0,0
+}
+
+
+//Together arms
+surface1060
+{
+	element0,overlay,ancient_gem/arm_both/resting.png,0,0
+}
+
+
+//————— Gem eye surface definitions —————
+//First 1 is just to deal with leading 0s and has no meaning
+//Middle two digits are the surface/head number (00-09)
+//Last two are the gem color number (00-11)
+//Last two digits also have the blink frames, they start at 90
+surface10000
+{
+	element0,overlay,ancient_gem/eye/00/00.png,0,0
+}
+
+surface10001
+{
+	element0,overlay,ancient_gem/eye/00/01.png,0,0
+}
+
+surface10002
+{
+	element0,overlay,ancient_gem/eye/00/02.png,0,0
+}
+
+surface10003
+{
+	element0,overlay,ancient_gem/eye/00/03.png,0,0
+}
+
+surface10004
+{
+	element0,overlay,ancient_gem/eye/00/04.png,0,0
+}
+
+surface10005
+{
+	element0,overlay,ancient_gem/eye/00/05.png,0,0
+}
+
+surface10006
+{
+	element0,overlay,ancient_gem/eye/00/06.png,0,0
+}
+
+surface10007
+{
+	element0,overlay,ancient_gem/eye/00/07.png,0,0
+}
+
+surface10008
+{
+	element0,overlay,ancient_gem/eye/00/08.png,0,0
+}
+
+surface10009
+{
+	element0,overlay,ancient_gem/eye/00/09.png,0,0
+}
+
+surface10010
+{
+	element0,overlay,ancient_gem/eye/00/10.png,0,0
+}
+
+surface10011
+{
+	element0,overlay,ancient_gem/eye/00/11.png,0,0
+}
+
+
+surface10100
+{
+	element0,overlay,ancient_gem/eye/01/00.png,0,0
+}
+
+surface10101
+{
+	element0,overlay,ancient_gem/eye/01/01.png,0,0
+}
+
+surface10102
+{
+	element0,overlay,ancient_gem/eye/01/02.png,0,0
+}
+
+surface10103
+{
+	element0,overlay,ancient_gem/eye/01/03.png,0,0
+}
+
+surface10104
+{
+	element0,overlay,ancient_gem/eye/01/04.png,0,0
+}
+
+surface10105
+{
+	element0,overlay,ancient_gem/eye/01/05.png,0,0
+}
+
+surface10106
+{
+	element0,overlay,ancient_gem/eye/01/06.png,0,0
+}
+
+surface10107
+{
+	element0,overlay,ancient_gem/eye/01/07.png,0,0
+}
+
+surface10108
+{
+	element0,overlay,ancient_gem/eye/01/08.png,0,0
+}
+
+surface10109
+{
+	element0,overlay,ancient_gem/eye/01/09.png,0,0
+}
+
+surface10110
+{
+	element0,overlay,ancient_gem/eye/01/10.png,0,0
+}
+
+surface10111
+{
+	element0,overlay,ancient_gem/eye/01/11.png,0,0
+}
+
+surface10200
+{
+	element0,overlay,ancient_gem/eye/02/00.png,0,0
+}
+
+surface10201
+{
+	element0,overlay,ancient_gem/eye/02/01.png,0,0
+}
+
+surface10202
+{
+	element0,overlay,ancient_gem/eye/02/02.png,0,0
+}
+
+surface10203
+{
+	element0,overlay,ancient_gem/eye/02/03.png,0,0
+}
+
+surface10204
+{
+	element0,overlay,ancient_gem/eye/02/04.png,0,0
+}
+
+surface10205
+{
+	element0,overlay,ancient_gem/eye/02/05.png,0,0
+}
+
+surface10206
+{
+	element0,overlay,ancient_gem/eye/02/06.png,0,0
+}
+
+surface10207
+{
+	element0,overlay,ancient_gem/eye/02/07.png,0,0
+}
+
+surface10208
+{
+	element0,overlay,ancient_gem/eye/02/08.png,0,0
+}
+
+surface10209
+{
+	element0,overlay,ancient_gem/eye/02/09.png,0,0
+}
+
+surface10210
+{
+	element0,overlay,ancient_gem/eye/02/10.png,0,0
+}
+
+surface10211
+{
+	element0,overlay,ancient_gem/eye/02/11.png,0,0
+}
+
+surface10300
+{
+	element0,overlay,ancient_gem/eye/03/00.png,0,0
+}
+
+surface10301
+{
+	element0,overlay,ancient_gem/eye/03/01.png,0,0
+}
+
+surface10302
+{
+	element0,overlay,ancient_gem/eye/03/02.png,0,0
+}
+
+surface10303
+{
+	element0,overlay,ancient_gem/eye/03/03.png,0,0
+}
+
+surface10304
+{
+	element0,overlay,ancient_gem/eye/03/04.png,0,0
+}
+
+surface10305
+{
+	element0,overlay,ancient_gem/eye/03/05.png,0,0
+}
+
+surface10306
+{
+	element0,overlay,ancient_gem/eye/03/06.png,0,0
+}
+
+surface10307
+{
+	element0,overlay,ancient_gem/eye/03/07.png,0,0
+}
+
+surface10308
+{
+	element0,overlay,ancient_gem/eye/03/08.png,0,0
+}
+
+surface10309
+{
+	element0,overlay,ancient_gem/eye/03/09.png,0,0
+}
+
+surface10310
+{
+	element0,overlay,ancient_gem/eye/03/10.png,0,0
+}
+
+surface10311
+{
+	element0,overlay,ancient_gem/eye/03/11.png,0,0
+}
+
+surface10400
+{
+	element0,overlay,ancient_gem/eye/04/00.png,0,0
+}
+
+surface10401
+{
+	element0,overlay,ancient_gem/eye/04/01.png,0,0
+}
+
+surface10402
+{
+	element0,overlay,ancient_gem/eye/04/02.png,0,0
+}
+
+surface10403
+{
+	element0,overlay,ancient_gem/eye/04/03.png,0,0
+}
+
+surface10404
+{
+	element0,overlay,ancient_gem/eye/04/04.png,0,0
+}
+
+surface10405
+{
+	element0,overlay,ancient_gem/eye/04/05.png,0,0
+}
+
+surface10406
+{
+	element0,overlay,ancient_gem/eye/04/06.png,0,0
+}
+
+surface10407
+{
+	element0,overlay,ancient_gem/eye/04/07.png,0,0
+}
+
+surface10408
+{
+	element0,overlay,ancient_gem/eye/04/08.png,0,0
+}
+
+surface10409
+{
+	element0,overlay,ancient_gem/eye/04/09.png,0,0
+}
+
+surface10410
+{
+	element0,overlay,ancient_gem/eye/04/10.png,0,0
+}
+
+surface10411
+{
+	element0,overlay,ancient_gem/eye/04/11.png,0,0
+}
+
+surface10500
+{
+	element0,overlay,ancient_gem/eye/05/00.png,0,0
+}
+
+surface10501
+{
+	element0,overlay,ancient_gem/eye/05/01.png,0,0
+}
+
+surface10502
+{
+	element0,overlay,ancient_gem/eye/05/02.png,0,0
+}
+
+surface10503
+{
+	element0,overlay,ancient_gem/eye/05/03.png,0,0
+}
+
+surface10504
+{
+	element0,overlay,ancient_gem/eye/05/04.png,0,0
+}
+
+surface10505
+{
+	element0,overlay,ancient_gem/eye/05/05.png,0,0
+}
+
+surface10506
+{
+	element0,overlay,ancient_gem/eye/05/06.png,0,0
+}
+
+surface10507
+{
+	element0,overlay,ancient_gem/eye/05/07.png,0,0
+}
+
+surface10508
+{
+	element0,overlay,ancient_gem/eye/05/08.png,0,0
+}
+
+surface10509
+{
+	element0,overlay,ancient_gem/eye/05/09.png,0,0
+}
+
+surface10510
+{
+	element0,overlay,ancient_gem/eye/05/10.png,0,0
+}
+
+surface10511
+{
+	element0,overlay,ancient_gem/eye/05/11.png,0,0
+}
+
+surface10900
+{
+	element0,overlay,ancient_gem/eye/09/00.png,0,0
+}
+
+surface10901
+{
+	element0,overlay,ancient_gem/eye/09/01.png,0,0
+}
+
+surface10902
+{
+	element0,overlay,ancient_gem/eye/09/02.png,0,0
+}
+
+surface10903
+{
+	element0,overlay,ancient_gem/eye/09/03.png,0,0
+}
+
+surface10904
+{
+	element0,overlay,ancient_gem/eye/09/04.png,0,0
+}
+
+surface10905
+{
+	element0,overlay,ancient_gem/eye/09/05.png,0,0
+}
+
+surface10906
+{
+	element0,overlay,ancient_gem/eye/09/06.png,0,0
+}
+
+surface10907
+{
+	element0,overlay,ancient_gem/eye/09/07.png,0,0
+}
+
+surface10908
+{
+	element0,overlay,ancient_gem/eye/09/08.png,0,0
+}
+
+surface10909
+{
+	element0,overlay,ancient_gem/eye/09/09.png,0,0
+}
+
+surface10910
+{
+	element0,overlay,ancient_gem/eye/09/10.png,0,0
+}
+
+surface10911
+{
+	element0,overlay,ancient_gem/eye/09/11.png,0,0
+}
