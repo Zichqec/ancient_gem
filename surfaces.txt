@@ -1,8 +1,16 @@
 descript
 {
 	version,1
+	
+	//satolist.palette.offset,179,19
+	//satolist.palette.frame,125,125
 }
 
+//Tidies up the display in satolist's surface palette
+surface1020-1026,1040-1046,1060,10000-10011,10100-10111,10200-10211,10300-10311,10400-10411,10500-10511,10900-10911
+{
+	//satolist.palette.visible,0
+}
 
 //—————————————————————————————— Sakura surfaces ——————————————————————————————
 
