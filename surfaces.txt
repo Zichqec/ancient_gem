@@ -34,6 +34,7 @@ surface0-9
 surface0
 {
 	element1,overlay,ancient_gem/head/00.png,0,0
+	
 	collisionex0,eye,region,ancient_gem/collision/00.png,230,230,230
 	collisionex1,socket,region,ancient_gem/collision/00.png,128,128,128
 	collisionex2,crown,region,ancient_gem/collision/00.png,102,102,102
@@ -92,6 +93,7 @@ surface0
 surface1
 {
 	element1,overlay,ancient_gem/head/01.png,0,0
+	
 	collisionex0,eye,region,ancient_gem/collision/01.png,230,230,230
 	collisionex1,socket,region,ancient_gem/collision/01.png,128,128,128
 	collisionex2,crown,region,ancient_gem/collision/01.png,102,102,102
@@ -150,6 +152,7 @@ surface1
 surface2
 {
 	element1,overlay,ancient_gem/head/02.png,0,0
+	
 	collisionex0,eye,region,ancient_gem/collision/02.png,230,230,230
 	collisionex1,socket,region,ancient_gem/collision/02.png,128,128,128
 	collisionex2,crown,region,ancient_gem/collision/02.png,102,102,102
@@ -208,6 +211,7 @@ surface2
 surface3
 {
 	element1,overlay,ancient_gem/head/03.png,0,0
+	
 	collisionex0,eye,region,ancient_gem/collision/03.png,230,230,230
 	collisionex1,socket,region,ancient_gem/collision/03.png,128,128,128
 	collisionex2,crown,region,ancient_gem/collision/03.png,102,102,102
@@ -266,6 +270,7 @@ surface3
 surface4
 {
 	element1,overlay,ancient_gem/head/04.png,0,0
+	
 	collisionex0,eye,region,ancient_gem/collision/04.png,230,230,230
 	collisionex1,socket,region,ancient_gem/collision/04.png,128,128,128
 	collisionex2,crown,region,ancient_gem/collision/04.png,102,102,102
@@ -324,6 +329,7 @@ surface4
 surface5
 {
 	element1,overlay,ancient_gem/head/05.png,0,0
+	
 	collisionex0,eye,region,ancient_gem/collision/05.png,230,230,230
 	collisionex1,socket,region,ancient_gem/collision/05.png,128,128,128
 	collisionex2,crown,region,ancient_gem/collision/05.png,102,102,102
@@ -382,6 +388,7 @@ surface5
 surface6
 {
 	element1,overlay,ancient_gem/head/06.png,0,0
+	
 	collisionex1,socket,region,ancient_gem/collision/06.png,128,128,128
 	collisionex2,crown,region,ancient_gem/collision/06.png,102,102,102
 	collisionex3,ears,region,ancient_gem/collision/06.png,153,153,153
@@ -392,6 +399,7 @@ surface6
 surface7
 {
 	element1,overlay,ancient_gem/head/07.png,0,0
+	
 	collisionex1,socket,region,ancient_gem/collision/07.png,128,128,128
 	collisionex2,crown,region,ancient_gem/collision/07.png,102,102,102
 	collisionex3,ears,region,ancient_gem/collision/07.png,153,153,153
@@ -402,6 +410,7 @@ surface7
 surface8
 {
 	element1,overlay,ancient_gem/head/08.png,0,0
+	
 	collisionex1,socket,region,ancient_gem/collision/08.png,128,128,128
 	collisionex2,crown,region,ancient_gem/collision/08.png,102,102,102
 	collisionex3,ears,region,ancient_gem/collision/08.png,153,153,153
@@ -412,6 +421,7 @@ surface8
 surface9
 {
 	element1,overlay,ancient_gem/head/09.png,0,0
+	
 	collisionex0,eye,region,ancient_gem/collision/09.png,230,230,230
 	collisionex1,socket,region,ancient_gem/collision/09.png,128,128,128
 	collisionex2,crown,region,ancient_gem/collision/09.png,102,102,102
