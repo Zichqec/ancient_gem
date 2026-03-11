@@ -1,4 +1,4 @@
-Ancient Gem freeshell v1.0.0
+Ancient Gem freeshell v1.0.1
 for Etc. Jam 2025
 
 Holy gemstones! Your adventures in this cave have led you all the way to the gem queen! What will you do now? What will happen to you?
