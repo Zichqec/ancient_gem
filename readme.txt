@@ -40,7 +40,7 @@ It is not required to notify me that you have used this shell, but I'd love to s
 
 
 —————————— Customization ——————————
-layers.psd has been included to help with customization. Feel free to make use of it for recoloring, adding patterns, etc.
+ancient_gem_layers.psd has been included to help with customization. Feel free to make use of it for recoloring, adding patterns, etc.
 
 The surface numbering is set up in such a way that it should be easy to combine with the Forged Metal freeshell without having to renumber very many things.
 
